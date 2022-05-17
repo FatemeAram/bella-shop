@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./assets/fonts/font.css">
+    <link rel="stylesheet" href="./assets/fonts/font.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script >
+       function ShowHide(divId)
+{
+    var aText = document.getElementById("more");
+    
+
+if(document.getElementById(divId).style.display == 'none')
+{
+document.getElementById(divId).style.display='block';
+aText.innerHTML= "read less"
+}
+else
+{
+document.getElementById(divId).style.display = 'none';
+aText.innerHTML= "read more"
+}
+}
+
+function ShowHide1(divId1)
+{
+    var bText= document.getElementById("more1")
+if(document.getElementById(divId1).style.display == 'none')
+{
+document.getElementById(divId1).style.display='block';
+bText.innerHTML="read less"
+}
+else
+{
+document.getElementById(divId1).style.display = 'none';
+bText.innerHTML="read more"
+}
+}
+</script>
+ 
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-top">
+        <i class="fa fa-bars icon"></i>
+        <span>...</span>
+        <i class="fa fa-shopping-cart icon"></i>
+        </nav>
+         <div class="bg-header">
+             <h1>Online Shop of coffee</h1>
+         </div>
+         <div class="header-bottom-badge">
+             <div class="container">
+                <img src="./assets/images/coffee maker.jpg" alt="">
+                <p>coffee maker</p>
+             </div>
+             <div class="container">
+                 <img src="./assets/images/mugs.jpg" alt="">
+                 <p>mugs</p>
+             </div>
+             <div class="container">
+                 <img src="./assets/images/roasted-coffee-beans-500x500-500x500.jpg" alt="">
+                 <p>roasted coffee</p>
+             </div>
+         </div>
+    </header>
+    <main>
+        <section class="section-one">
+            <div>
+                <img src="assets/images/ice-coffee.jpg">
+                  <p>Perfect Iced coffeeb<br>
+                    This recipe is quick, easy, budget-friendly, and tastes just like the gourmet coffee-shops, if not better!
+                    INGREDIENTS <a id="more" onclick="javascript:ShowHide('HiddenDiv')">read more</a><p class="mid" id="HiddenDiv" style="display: none;">
+                        1 cup coffee, at room temperature
+                        2 tablespoons half and half*, or more, to taste
+                        FOR THE SIMPLE SYRUP
+                        1/2 cup sugar
+                        1 cup water
+                        1/2 teaspoon vanilla extract
+                        DIRECTIONS:
+                        1.	FOR THE SIMPLE SYRUP: Combine sugar and 1 cup water in a medium saucepan over medium heat, stirring until the sugar has dissolved. Let cool completely and stir in vanilla extract; set aside in the refrigerator until ready to serve.
+                        2.	Serve coffee over ice with half and half and simple syrup, adding 1 teaspoon at a time, to taste.
+                    </p>
+                
+                  </p>
+
+            </div>
+            <div>
+                <img src="./assets/images/americano.jpg">
+                <p>How to make an Americano<br>
+                
+                    Once you know about the water ratio and espresso technique: there’s not much to know about this coffee drink! <a id="more1" onclick="javascript:ShowHide1('HiddenDive1')">read more</a><p class="mid" id="HiddenDiv1">are the basic steps for how to make an Americano:
+                    •	Decide on your drink size. A 1-shot Americano can mostly fit in an espresso mug (shown here). A 2-shot drink is best suited in a latte mug.
+                    •	Make the espresso. Use espresso roast coffee to make espresso using your favorite method: with an automated espresso machine, manual espresso maker, or Aeropress.
+                    •	Boil the water. Use a regular or electric teapot to boil the water. The standard ratio is 2:1 water to espresso, but you can go up to as much as 3:1.
+                    •	Mix the two and enjoy! Pour the boiling water into the espresso. Instant Caffe Americano!
+                    </p>
+                    </p>
+            </div>
+            <div>
+                <img src="./assets/images/Mona Mina.jfif">
+                <p>How to make an Americano
+                    Once you know about the water ratio and espresso technique: there’s not much to know about this coffee drink! Here are the basic steps for how to make an Americano:
+                    •	Decide on your drink size. A 1-shot Americano can mostly fit in an espresso mug (shown here). A 2-shot drink is best suited in a latte mug.
+                    •	Make the espresso. Use espresso roast coffee to make espresso using your favorite method: with an automated espresso machine, manual espresso maker, or Aeropress.
+                    •	Boil the water. Use a regular or electric teapot to boil the water. The standard ratio is 2:1 water to espresso, but you can go up to as much as 3:1.
+                    •	Mix the two and enjoy! Pour the boiling water into the espresso. Instant Caffe Americano!
+                    
+                    Ingredients
+                    •	2 ounces (2 shots) espresso*
+                    </p>
+            </div>
+            <div>
+                <img src="./assets/images/Lavender Latte with Oat Milk - Le Petit Eats.jfif" alt="">
+                <p>How an Expert in Vietnamese Coffee Spends Her Sundays<br>
+                    When Sahra Nguyen is not teaching Americans about Robusta beans, she’s shopping and enjoying cocktails, or maybe a game of pool.</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./js/all.min.js"></script>
+</html>

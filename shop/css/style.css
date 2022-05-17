@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --bg-gray:rgb(165, 157, 157);
+    --bg-rose: #f5a4b2;
+    --bg-blue: #06b6d4;
+    --text-sm-mobile: 0.68rem;
+    --text-sm-pc: 0.9rem;
+}
+body{
+    font-size: 62.5%;
+    height: 200vh;
+}
+/* navbar */
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: var(--bg-blue);
+    position: absolute;
+    width: 100%;
+}
+.nav-top span{
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.icon{
+    font-size: 1.3rem;
+}
+/* end navbar */
+
+ /* header */
+.bg-header{
+    width: 100%;
+    height: 30rem;
+    background: url(../assets/images/dress-this-way.jfif) no-repeat;
+    background-size: 100% 100%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding: 23rem 0 0 0;
+}
+@media screen and (min-width:640px){
+
+    .bg-header{
+        background:url(/assets/images/bg-wild-coffee.jfif) no-repeat;
+        background-size: auto 100%;
+        background-position: center;
+    }
+    .bg-header h1{
+        display: none;
+    }
+}
+.bg-header h1{
+    color: var(--bg-blue);
+    text-align: center;
+    font-size: 2rem;
+}
+.header-bottom-badge img{
+    width: 3.2rem;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: var(--bg-blue);
+    
+}
+.header-bottom-badge{
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+}
+.header-bottom-badge .container{
+text-align: center;
+margin: 0.5rem;
+}
+@media screen and (min-width:640px){
+    .header-bottom-badge{
+        display: none;
+    }
+}
+ /* end header  */
+
+ /* section-one homepage */
+
+ .section-one{
+     display: flex;
+     justify-content: space-around;
+     flex-direction:column;
+     flex-wrap: wrap;
+     padding: 2rem;
+     width: 100%;
+     text-align: center;
+
+ }
+ .section-one div{
+     background-color:hsl(210, 5%, 91%);
+     padding: 1rem;
+     margin-top: 1rem;
+     text-align: center;
+ }
+ .section-one img{
+     width: 10rem;
+     height: 12rem;
+ }
+ .section-one p{
+     font-size: var(--text-sm-mobile);
+     padding-left: 1rem;
+     text-align: center;
+ }
+ .more{
+    color: #06b6d4;
+ }
+ #HiddenDiv{
+display: none;
+ }
+ #HiddenDiv1{
+display: none;
+ }
+@media screen and (min-width: 640px) {
+    .section-one{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section-one div{
+        width: 48.6%;
+    }
+    .section-one p{
+        font-size: var(--text-sm-pc);
+    }
+}
+
+ /* end section-one homepage */
